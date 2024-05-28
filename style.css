@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    padding: 5%;
+    position: relative;
+    min-height: 100vh;
+}
+.container{
+  background-color: hsl(216, 50%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+max-width: 24rem;
+  height: 87vh;
+  position: relative;
+  /* gap: 5%; */
+  padding: 2%;
+  border-radius: 16px ;
+}
+.image{
+    margin: 7px;
+    border-radius: 16px ;
+}
+.hover{
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+width: 300px;
+height: 300px;
+background-color: hsl(178, 100%, 50%, 0.5);
+bottom: 1%;
+}
+.hover:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.container img{
+    width: 343px;
+    height: 343px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    border-radius: 24px ;
+}
+.textbox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.textbox p{
+    color: hsl(0,0%,100%);
+    font-weight: 600;
+}
+.textbox span{
+    color: hsl(215, 51%, 70%);
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+}
+.ethereum, .days{
+    gap: 0.5rem;
+    font-weight: 500;
+}
+.ethereum{
+    color:hsl(178, 100%, 50%) ;
+}
+.days{
+    color: hsl(215, 51%, 70%);
+}
+.ethereum, .days, .creation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.details img{
+    width: 25px;
+    height: 25px;
+}
+.creation{
+    margin-right: auto;
+    gap: 20px;
+    color: hsl(215, 51%, 70%);
+}
+.creation span{
+    color: hsl(0,0%,100%);
+}
+.creation img{
+    width: 40px;
+    height: 40px;
+    outline: 1px solid white;
+    border-radius: 50%;
+}
